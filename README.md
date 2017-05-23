@@ -28,4 +28,17 @@ To switch to another branch run the following command
 <img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-0.jpg" />
 
 
-### Step 1
+### Step 1: Checkout master
+
+The First Thing we need to do is checkout the master branch. We will be getting the latest version of the master branch on our local machine
+
+<img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-1.jpg" />
+
+
+### Step 2: Pull From master
+
+In Git when we move code around, like uploading or downloading we call it Pushing or Pulling. Both tasks acomplish basically the same thing, but the difference is the direction of the data flow. Here we will be doing a Pull from the master. This command will Pull the code from GitHub and update your local Master version to be identical.
+
+**Never write code while on the master branch or push to the master branch**
+
+ <img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-2.jpg" />
