@@ -15,9 +15,9 @@ the -b in the command will make sure you create a branch and switch to it after 
 #### Checking What Branch You are on.
 When starting this guide you will need to be working on your own branch. To check what branch you are on run `git branch`. This will display all the branches you have on your local computer, with a star next to the branch you are working from, or working branch.
 
-`* My_Branch
+<pre>* My_Branch
   master
-  Bob_Ross_Branch`
+  Bob_Ross_Branch</pre>
 
 #### Getting on Your Branch
 To switch to another branch run the following command
@@ -25,7 +25,7 @@ To switch to another branch run the following command
 
 **You should never make changes to the code base while on the master Branch**
 
-<img src="https://github.com/Rasbandit/Git-Good-Guide/Images/Step-0.jpg" />
+<img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-0.jpg" />
 
 
 ### Step 1
