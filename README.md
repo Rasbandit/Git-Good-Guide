@@ -72,13 +72,13 @@ If you have merge conflicts look at each file it says a conflict has been found 
 
 Merge conflicts look like this:
 
-<pre>
+
 `>>>>>>>>Head
   var someCode = 'example'
 ========
   var someOtherCode = 'different example'
 <<<<<<<<Master`
-</pre>
+
 
 The part between the `>>>>>>>>Head` and the `=======` is your local version of the code, and the part between the `======` and `<<<<<<<<Master` is the code from the master. Talk to who ever the other code belongs to and figure out whose code should be there, make sure you remove the 3 lines that were added when you are done, being the `>>>>>>>Head`, `=======`, and `<<<<<<<<Master`.
 
