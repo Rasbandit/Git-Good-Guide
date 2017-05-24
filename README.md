@@ -9,7 +9,9 @@ It also makes it easier for multiple people to work on the same code base and no
 
 #### Creating Your Own Branch
 To make your own branch run the following command
+
 `git checkout -b [name_of_your_new_branch]`
+
 the -b in the command will make sure you create a branch and switch to it after its creation
 
 #### Checking What Branch You are on.
@@ -21,9 +23,12 @@ When starting this guide you will need to be working on your own branch. To chec
 
 #### Getting on Your Branch
 To switch to another branch run the following command
+
 `git checkout [name_of_your_branch]`
 
 **You should never make changes to the code base while on the master Branch**
+
+**Make sure you read the results after you type in every command.**
 
 <img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-0.jpg" />
 
@@ -31,6 +36,9 @@ To switch to another branch run the following command
 ### Step 1: Checkout master
 
 The First Thing we need to do is checkout the master branch. We will be getting the latest version of the master branch on our local machine
+
+**Common Issues**
+You can not swap to another branch if you have not done a `git add` and `git commit` to your code. Make sure you read the results after you type in every command.
 
 <img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-1.jpg" />
 
@@ -41,4 +49,42 @@ In Git when we move code around, like uploading or downloading we call it Pushin
 
 **Never write code while on the master branch or push to the master branch**
 
+**Common Issues**
+Sometimes when you try to pull from master it won't let you until you have done an add and commit. This typically means changes were made on your local master branch. Never make changes on the master branch.
+
+To fix this run `git add` and `git commit`. **DO NOT RUN GIT PUSH!!!!** Never push to master.
+
  <img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-2.jpg" />
+
+### Step 3: Switch Back to Your Local branch
+
+When we merge two branches we have to choose what branch will be recieving the changes and which one will be referenced. We want the Master Branch to be the reference and the Personal branch to recieve the changes. Because of this we need to swap back to your Personal Branch.
+
+ <img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-3.jpg" />
+
+ ### Step 4: Merge Your Code with Master
+
+Now that we have a local version of the most up to date Master Branch we can merge our local version with the Master version. While on your local branch run `git merge master`.
+
+**Be sure to read the messages that come after this command to ensure you don't have merge conflicts.**
+
+If you have merge conflicts look at each file it says a conflict has been found (you can ignore your bundle files as those will be fixed after you run Gulp).
+
+Merge conflicts look like this:
+
+<pre>>>>>>>>>Head
+  var someCode = 'example'
+========
+  var someOtherCode = 'different example'
+<<<<<<<<Master</pre>
+
+The part between the `>>>>>>>>Head` and the `=======` is your local version of the code, and the part between the `======` and `<<<<<<<<Master` is the code from the master. Talk to who ever the other code belongs to and figure out whose code should be there, make sure you remove the 3 lines that were added when you are done, being the `>>>>>>>Head`, `=======`, and `<<<<<<<<Master`.
+
+**Tip**
+If you press `ctrl-shift-f` on windows or `cmd-shift-f` on mac you can do a search for every instance of `>>>>>>>Head` in your whole project, making it easier to find conflicts.
+
+ <img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-4.jpg" />
+
+ ### Step 5: Push Your Code to GitHub
+
+ 
