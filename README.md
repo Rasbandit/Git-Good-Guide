@@ -62,7 +62,7 @@ When we merge two branches we have to choose what branch will be recieving the c
 
  <img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-3.jpg" />
 
- ### Step 4: Merge Your Code with Master
+### Step 4: Merge Your Code with Master
 
 Now that we have a local version of the most up to date Master Branch we can merge our local version with the Master version. While on your local branch run `git merge master`.
 
@@ -85,6 +85,32 @@ If you press `ctrl-shift-f` on windows or `cmd-shift-f` on mac you can do a sear
 
  <img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-4.jpg" />
 
- ### Step 5: Push Your Code to GitHub
+### Step 5: Push Your Code to GitHub
 
- 
+Now that you have merged your code with the Master branch you can push your code up to GitHub. Run `git add .`, `git commit -m "message"`, and `git push`.
+
+<img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-5.jpg" />
+
+### Step 6: Submit A Pull Request
+
+After you push go to your group's repository page on GitHub. A new yellow bar with a green button on the right that says 'Compare & Pull Request' should appear. If fit does not click the New Pull Request button that is highlighted below.
+
+<img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-6-1.jpg" />
+
+A new page will load. If you clicked the 'Compare & Pull Request' button then it should look very similar to the image below. Add any comments you would like to make regarding the pull request then click the Green 'Create Pull Request' button in the highlighted 2 section.
+
+If you had to click the gray 'New pull request' button then you will need to click the second gray drop down on the page below. The drop down on the left should read master and the one on the right should read your branch name.
+
+<img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-6-2.jpg" />
+
+**Merge conflicts**
+The second page will also inform you if there was any unresolved merge conflicts. If there are then you will need to redo all above steps. Be sure to read all the results from when you run commands. They often tell you exactly what you need to run to resolve the issue.
+
+Once you have submited your pull request talk to or send a message to your mentor and they will review the pull request and approve it. Once approved the online master branch will have your new code availible for the rest of the group.
+
+<img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-6.jpg" />
+
+
+### Step 7: Pull Down the New Master code
+
+Checkout the master branch by running `git checkout master` and pull using `git pull`
