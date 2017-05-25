@@ -1,11 +1,11 @@
 # Git Good Guide
 ## Setup and Basic Overview
-This repo is designed to help teach the work flow of using git in your group project. when using git there are essentially four versions of the code base to be concered with. Your branch of code exists in two seperate versions, one on your local machine and the other on GitHub. The master branch has the same setup, where there is a version on your local machine and a version on Github. Git is designed for you to work on the code in your own branch without causing issues in others code.
+This repo is designed to help teach the workflow of using git in your group project. when using git there are essentially four versions of the code base to be concerned with. Your branch of code exists in two separate versions, one on your local machine and the other on GitHub. The master branch has the same setup, where there is a version on your local machine and a version on Github. Git is designed for you to work on the code in your own branch without causing issues in others code.
 
 #### What is a Branch, and why do I need it.
-A branch is when you take an existing code base and make a copy of the code. This copy will not effect the original or 'Master' branch, allowing you to make changes to the code with out the risk of causing issues in the original code.
+A branch is when you take an existing code base and make a copy of the code. This copy will not affect the original or 'Master' branch, allowing you to make changes to the code with out the risk of causing issues in the original code.
 
-It also makes it easier for multiple people to work on the same code base and not overwrite or cause conflicts in each others code. Then when you are ready to merge your code with the original code git can help make sure every one's code does not overwrite each other.
+It also makes it easier for multiple people to work on the same code base and not overwrite or cause conflicts in each others code. Then when you are ready to merge your code with the original code git can help make sure everyone's code does not overwrite each other.
 
 #### Creating Your Own Branch
 To make your own branch run the following command
@@ -45,7 +45,7 @@ You can not swap to another branch if you have not done a `git add` and `git com
 
 ### Step 2: Pull From master
 
-In Git when we move code around, like uploading or downloading we call it Pushing or Pulling. Both tasks acomplish basically the same thing, but the difference is the direction of the data flow. Here we will be doing a Pull from the master. This command will Pull the code from GitHub and update your local Master version to be identical.
+In Git when we move code around, like uploading or downloading we call it Pushing or Pulling. Both tasks accomplish basically the same thing, but the difference is the direction of the data flow. Here we will be doing a Pull from the master. This command will Pull the code from GitHub and update your local Master version to be identical.
 
 **Never write code while on the master branch or push to the master branch**
 
@@ -58,7 +58,7 @@ To fix this run `git add` and `git commit`. **DO NOT RUN GIT PUSH!!!!** Never pu
 
 ### Step 3: Switch Back to Your Local branch
 
-When we merge two branches we have to choose what branch will be recieving the changes and which one will be referenced. We want the Master Branch to be the reference and the Personal branch to recieve the changes. Because of this we need to swap back to your Personal Branch.
+When we merge two branches we have to choose what branch will be receiving the changes and which one will be referenced. We want the Master Branch to be the reference and the Personal branch to receive the changes. Because of this, we need to swap back to your Personal Branch.
 
  <img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-3.jpg" />
 
@@ -82,10 +82,10 @@ Merge conflicts look like this:
 </pre>
 
 
-The part between the `>>>>>>>>Head` and the `=======` is your local version of the code, and the part between the `======` and `<<<<<<<<Master` is the code from the master. Talk to who ever the other code belongs to and figure out whose code should be there, make sure you remove the 3 lines that were added when you are done, being the `>>>>>>>Head`, `=======`, and `<<<<<<<<Master`.
+The part between the `>>>>>>>>Head` and the `=======` is your local version of the code, and the part between the `======` and `<<<<<<<<Master` is the code from the master. Talk to whoever the other code belongs to and figure out whose code should be there, make sure you remove the 3 lines that were added when you are done, being the `>>>>>>>Head`, `=======`, and `<<<<<<<<Master`.
 
 **Tip**
-If you press `ctrl-shift-f` on windows or `cmd-shift-f` on mac you can do a search for every instance of `>>>>>>>Head` in your whole project, making it easier to find conflicts.
+If you press `ctrl-shift-f` on windows or `cmd-shift-f` on a mac. You can do a search for every instance of `>>>>>>>Head` in your whole project, making it easier to find conflicts.
 
  <img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-4.jpg" />
 
@@ -108,13 +108,16 @@ If you had to click the gray 'New pull request' button then you will need to cli
 <img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-6-2.jpg" />
 
 **Merge conflicts**
-The second page will also inform you if there was any unresolved merge conflicts. If there are then you will need to redo all above steps. Be sure to read all the results from when you run commands. They often tell you exactly what you need to run to resolve the issue.
+The second page will also inform you if there were any unresolved merge conflicts. If there are then you will need to redo all above steps. Be sure to read all the results from when you run commands. They often tell you exactly what you need to run to resolve the issue.
 
-Once you have submited your pull request talk to or send a message to your mentor and they will review the pull request and approve it. Once approved the online master branch will have your new code availible for the rest of the group.
+Once you have submitted your pull request talk to or send a message to your mentor and they will review the pull request and approve it. Once approved the online master branch will have your new code available for the rest of the group.
 
 <img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-6.jpg" />
 
 
 ### Step 7: Pull Down the New Master code
 
-Checkout the master branch by running `git checkout master` and pull using `git pull`
+Checkout the master branch by running `git checkout master` and pull using `git pull`. The rest of your group should do the same. Make sure to switch back to your own branch so you don't make changes to the master.
+
+
+<img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-7.jpg" />
