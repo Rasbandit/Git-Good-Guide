@@ -10,10 +10,10 @@ This repo is designed to help teach the workflow of using git in your group proj
 - [How do I change branches?](#Getting on Your Branch)
 - [How do I merge my code?](#How Do I merge my code with the master Master?)
 
-#### Where do I start?
+### Where do I start?
 Before you start you will need one person, and only one person, in your group to make the initial repo. Get the whole team together around one computer and decide together how to structure your file tree. You will also want to run create-react-app and install any NPM packages your project will need. an example of a file structure can be seen below.
 
-<img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/file-structure.png">
+<img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/file-structure.PNG">
 
 Make sure to create your .gitignore file with node_modules and your .env before you do any add or commits.
 
@@ -36,19 +36,19 @@ Once there click on collaborators and you can search for the other team members 
 #### Im a collaborator, now what?
 You won't need to fork the repo before you clone it, if you fork it you make a copy and you wont be working on the same project as the rest of your team. Just clone the repo and make a branch. More on branching below.
 
-#### What is a Branch, and why do care?
+### What is a Branch, and why do care?
 A branch is when you make a copy of a project but with the intend to make changes but not alter the original version. This will allowing you to make changes to the code with out the risk of breaking the original version.
 
 It also makes it easier for multiple people to work on the same code base and not overwrite or cause conflicts with each other. Then when you are ready to merge your code with the original, git can help make sure everyone's code does not conflict.
 
-#### Creating Your Own Branch
+### Creating Your Own Branch
 To make your own branch run the following command
 
 `git checkout -b [name_of_your_new_branch]`
 
 the -b in the command will make sure you create a branch and switch to it after its creation.
 
-#### Checking What Branch You are on.
+### Checking What Branch You are on.
 When starting this guide you will need to be working on your own branch. To check what branch you are on run `git branch`. This will display all the branches you have on your local computer, with a star next to the branch you are working from, or working branch.
 
 <pre>* My_Branch
