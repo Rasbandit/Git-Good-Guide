@@ -27,7 +27,7 @@ git commit -m "first commit"
 git remote add origin `http://your_git_repo.com`
 git push -u origin master</pre>
 
-<a name="Where-do-I-start?"></a>
+<a name="How-to-add-contributors"></a>
 #### How to add contributors
 If you want others to be able to make changes to your code you will need to add them to the repo as a collaborators. To do this click on the settings on the github repo web page.
 
