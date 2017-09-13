@@ -8,11 +8,12 @@ This repo is designed to help teach the workflow of using git in your group proj
 - [Im a collaborator, now what?](#Im-a-collaborator,-now-what?)
 - [What is a branch?](#What-is-a-Branch,-and-why-do-I-need-it.)
 - [How do I make a branch?](#Creating-Your-Own-Branch)
-- [What branch am I on?](#Checking-What-Branch-You-are-on.)]
+- [What branch am I on?](#Checking-What-Branch-You-are-on.)
 - [How do I change branches?](#Getting-on-Your-Branch)
 - [How do I merge my code?](#How-Do-I-merge-my-code-with-the-master-Master?)
 
 ### Where do I start?
+<a name="Where-do-I-start?"></a>
 Before you start you will need one person, and only one person, in your group to make the initial repo. Get the whole team together around one computer and decide together how to structure your file tree. You will also want to run create-react-app and install any NPM packages your project will need. an example of a file structure can be seen below.
 
 <img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/files.jpg">
