@@ -70,6 +70,10 @@ To switch to another branch run the following command
 
 `git checkout [name_of_your_branch]`
 
+The first push from your branch you will need to run this command
+
+`git push -u origin BRANCH_NAME`
+
 **Make sure you read the results after you type in every command.**
 
 <img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-0.jpg" />
@@ -136,6 +140,7 @@ If you press `ctrl-shift-f` on windows or `cmd-shift-f` on a mac. You can do a s
 ### Step 5: Push Your Code to GitHub
 
 Now that you have merged your code with the Master branch you can push your code up to GitHub. Run `git add .`, `git commit -m "message"`, and `git push`.
+if this is the first time you are pushing to branch you will need to run `git push -u origin BRANCHNAME`
 
 <img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-5.jpg" />
 
