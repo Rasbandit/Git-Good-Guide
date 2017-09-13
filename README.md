@@ -1,18 +1,52 @@
 # Git Good Guide
 ## Setup and Basic Overview
-This repo is designed to help teach the workflow of using git in your group project. when using git there are essentially four versions of the code base to be concerned with. Your branch of code exists in two separate versions, one on your local machine and the other on GitHub. The master branch has the same setup, where there is a version on your local machine and a version on Github. Git is designed for you to work on the code in your own branch without causing issues in others code.
+This repo is designed to help teach the workflow of using git in your group project. when using git there are four versions of the code each person should be concerned with. Your personal version or "branch" of code exists in two separate versions; one on your local machine and the other on GitHub. The master branch has the same setup, where there is a version on your local machine and a version on Github. When writing code it is best practice to branch your code and work exclusively on that branch. We will go over how to merge your code into the master branch
 
-#### What is a Branch, and why do I need it.
-A branch is when you take an existing code base and make a copy of the code. This copy will not affect the original or 'Master' branch, allowing you to make changes to the code with out the risk of causing issues in the original code.
+### Topics
+- [Where do I start?](#Where do I start?)
+- [What is a branch?](#What is a Branch, and why do I need it.)
+- [How do I make a branch?] (#Creating Your Own Branch)
+- [What branch am I on?](#Checking What Branch You are on.)]
+- [How do I change branches?](#Getting on Your Branch)
+- [How do I merge my code?](#How Do I merge my code with the master Master?)
 
-It also makes it easier for multiple people to work on the same code base and not overwrite or cause conflicts in each others code. Then when you are ready to merge your code with the original code git can help make sure everyone's code does not overwrite each other.
+#### Where do I start?
+Before you start you will need one person, and only one person, in your group to make the initial repo. Get the whole team together around one computer and decide together how to structure your file tree. You will also want to run create-react-app and install any NPM packages your project will need. an example of a file structure can be seen below.
+
+<img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/file-structure.png">
+
+Make sure to create your .gitignore file with node_modules and your .env before you do any add or commits.
+
+When you have the folders in place and the structure you want run git the commands below
+
+<pre>git add .
+git commit -m "first commit"
+git remote add origin `http://your_git_repo.com`
+git push -u origin master</pre>
+
+#### How to add contributors
+If you want others to be able to make changes to your code you will need to add them to the repo as a collaborators. To do this click on the settings on the github repo web page.
+
+<img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/settings.jpg">
+
+Once there click on collaborators and you can search for the other team members and send them invitations. Have each user you send the invitation to check their email and they can make pull requests to the master branch (more on what that means).
+
+<img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/colab.jpg">
+
+#### Im a collaborator, now what?
+You won't need to fork the repo before you clone it, if you fork it you make a copy and you wont be working on the same project as the rest of your team. Just clone the repo and make a branch. More on branching below.
+
+#### What is a Branch, and why do care?
+A branch is when you make a copy of a project but with the intend to make changes but not alter the original version. This will allowing you to make changes to the code with out the risk of breaking the original version.
+
+It also makes it easier for multiple people to work on the same code base and not overwrite or cause conflicts with each other. Then when you are ready to merge your code with the original, git can help make sure everyone's code does not conflict.
 
 #### Creating Your Own Branch
 To make your own branch run the following command
 
 `git checkout -b [name_of_your_new_branch]`
 
-the -b in the command will make sure you create a branch and switch to it after its creation
+the -b in the command will make sure you create a branch and switch to it after its creation.
 
 #### Checking What Branch You are on.
 When starting this guide you will need to be working on your own branch. To check what branch you are on run `git branch`. This will display all the branches you have on your local computer, with a star next to the branch you are working from, or working branch.
@@ -32,6 +66,7 @@ To switch to another branch run the following command
 
 <img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-0.jpg" />
 
+## How Do I merge my code with the master Master?
 
 ### Step 1: Checkout master
 
@@ -82,7 +117,7 @@ Merge conflicts look like this:
 </pre>
 
 
-The part between the `>>>>>>>>Head` and the `=======` is your local version of the code, and the part between the `======` and `<<<<<<<<Master` is the code from the master. Talk to whoever the other code belongs to and figure out whose code should be there, make sure you remove the 3 lines that were added when you are done, being the `>>>>>>>Head`, `=======`, and `<<<<<<<<Master`.
+The part between the `<<<<<<<<Head` and the `=======` is your local version of the code, and the part between the `======` and `>>>>>>>Master` is the code from the master. Talk to whoever the other code belongs to and figure out whose code should be there, make sure you remove the 3 lines that were added when you are done, being the `<<<<<<<<Head`, `=======`, and `>>>>>>>Master`.
 
 **Tip**
 If you press `ctrl-shift-f` on windows or `cmd-shift-f` on a mac. You can do a search for every instance of `>>>>>>>Head` in your whole project, making it easier to find conflicts.
@@ -107,7 +142,7 @@ If you had to click the gray 'New pull request' button then you will need to cli
 
 <img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-6-2.jpg" />
 
-**Merge conflicts**
+**Merge conflicts:**
 The second page will also inform you if there were any unresolved merge conflicts. If there are then you will need to redo all above steps. Be sure to read all the results from when you run commands. They often tell you exactly what you need to run to resolve the issue.
 
 Once you have submitted your pull request talk to or send a message to your mentor and they will review the pull request and approve it. Once approved the online master branch will have your new code available for the rest of the group.
