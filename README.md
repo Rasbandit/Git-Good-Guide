@@ -92,12 +92,12 @@ You can not swap to another branch if you have not done a `git add` and `git com
 
 In Git when we move code around, like uploading or downloading we call it Pushing or Pulling. Both tasks accomplish basically the same thing, but the difference is the direction of the data flow. Here we will be doing a Pull from the master. This command will Pull the code from GitHub and update your local Master version to be identical.
 
-**Never write code while on the master branch or push to the master branch**
+**When working as a group it is typically not a good idea**
 
 **Common Issues**
-Sometimes when you try to pull from master it won't let you until you have done an add and commit. This typically means changes were made on your local master branch. Never make changes on the master branch.
+Sometimes when you try to pull from master it won't let you until you have run `git add .` and `git commit`. This typically means changes were made on your local master branch. It is typically not advised to make changes while on the master branch.
 
-To fix this run `git add` and `git commit`. **DO NOT RUN GIT PUSH!!!!** Never push to master.
+To fix this run `git add` and `git commit`, But do not run git push.
 
  <img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-2.jpg" />
 
