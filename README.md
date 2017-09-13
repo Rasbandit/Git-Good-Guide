@@ -5,7 +5,7 @@ This repo is designed to help teach the workflow of using git in your group proj
 ### Topics
 - [Where do I start?](#Where-do-I-start?)
 - [How do I add collaborators?](#How-to-add-contributors)
-- [Im a collaborator, now what?](#Im-a-collaborator,-now-what?)
+- [Im a collaborator, now what?](#Im-a-collaborator-now-what?)
 - [What is a branch?](#What-is-a-Branch,-and-why-do-I-need-it.)
 - [How do I make a branch?](#Creating-Your-Own-Branch)
 - [What branch am I on?](#Checking-What-Branch-You-are-on.)
