@@ -69,8 +69,6 @@ To switch to another branch run the following command
 
 `git checkout [name_of_your_branch]`
 
-**You should never make changes to the code base while on the master Branch**
-
 **Make sure you read the results after you type in every command.**
 
 <img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-0.jpg" />
