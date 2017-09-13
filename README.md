@@ -3,7 +3,7 @@
 This repo is designed to help teach the workflow of using git in your group project. when using git there are four versions of the code each person should be concerned with. Your personal version or "branch" of code exists in two separate versions; one on your local machine and the other on GitHub. The master branch has the same setup, where there is a version on your local machine and a version on Github. When writing code it is best practice to branch your code and work exclusively on that branch. We will go over how to merge your code into the master branch
 
 ### Topics
-- [Where do I start?](#Where do I start?)
+- Where do I start?(#Where do I start?)
 - [What is a branch?](#What is a Branch, and why do I need it.)
 - [How do I make a branch?] (#Creating Your Own Branch)
 - [What branch am I on?](#Checking What Branch You are on.)]
@@ -13,7 +13,7 @@ This repo is designed to help teach the workflow of using git in your group proj
 ### Where do I start?
 Before you start you will need one person, and only one person, in your group to make the initial repo. Get the whole team together around one computer and decide together how to structure your file tree. You will also want to run create-react-app and install any NPM packages your project will need. an example of a file structure can be seen below.
 
-<img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/file-structure.PNG">
+<img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/files.jpg>
 
 Make sure to create your .gitignore file with node_modules and your .env before you do any add or commits.
 
