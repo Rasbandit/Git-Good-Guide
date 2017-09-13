@@ -13,7 +13,7 @@ This repo is designed to help teach the workflow of using git in your group proj
 ### Where do I start?
 Before you start you will need one person, and only one person, in your group to make the initial repo. Get the whole team together around one computer and decide together how to structure your file tree. You will also want to run create-react-app and install any NPM packages your project will need. an example of a file structure can be seen below.
 
-<img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/files.jpg>
+<img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/files.jpg">
 
 Make sure to create your .gitignore file with node_modules and your .env before you do any add or commits.
 
