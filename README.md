@@ -6,7 +6,7 @@ This repo is designed to help teach the workflow of using git in your group proj
 - [Where do I start?](#Where-do-I-start?)
 - [How do I add collaborators?](#How-to-add-contributors)
 - [Im a collaborator, now what?](#Im-a-collaborator-now-what?)
-- [What is a branch?](#What-is-a-Branch,-and-why-do-I-need-it.)
+- [What is a branch?](#What-is-a-Branch)
 - [How do I make a branch?](#Creating-Your-Own-Branch)
 - [What branch am I on?](#Checking-What-Branch-You-are-on.)
 - [How do I change branches?](#Getting-on-Your-Branch)
@@ -41,7 +41,7 @@ Once there click on collaborators and you can search for the other team members 
 ## Im a collaborator, now what?
 You won't need to fork the repo before you clone it, if you fork it you make a copy and you wont be working on the same project as the rest of your team. Just clone the repo and make a branch. More on branching below.
 
-<a name="What-is-a-Branch,-and-why-do-care?"></a>
+<a name="What-is-a-Branch"></a>
 ## What is a Branch, and why do care?
 A branch is when you make a copy of a project but with the intend to make changes but not alter the original version. This will allowing you to make changes to the code with out the risk of breaking the original version.
 
@@ -55,7 +55,7 @@ To make your own branch run the following command
 
 the -b in the command will make sure you create a branch and switch to it after its creation.
 
-<a name="Checking-What- Branch-You-are-on."></a>
+<a name="Checking-What-Branch-You-are-on."></a>
 ## Checking What Branch You are on.
 When starting this guide you will need to be working on your own branch. To check what branch you are on run `git branch`. This will display all the branches you have on your local computer, with a star next to the branch you are working from, or working branch.
 
