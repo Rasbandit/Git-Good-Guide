@@ -75,7 +75,7 @@ To switch to another branch run the following command
 <img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-0.jpg" />
 
 <a name="How-Do-I-merge-my-code-with-the-master-Master?"></a>
-## How Do I merge my code with the master Master?
+## How Do I merge my code with the Master?
 
 ### Step 1: Checkout master
 
