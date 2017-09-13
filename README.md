@@ -12,8 +12,8 @@ This repo is designed to help teach the workflow of using git in your group proj
 - [How do I change branches?](#Getting-on-Your-Branch)
 - [How do I merge my code?](#How-Do-I-merge-my-code-with-the-master-Master?)
 
-### Where do I start?
 <a name="Where-do-I-start?"></a>
+### Where do I start?
 Before you start you will need one person, and only one person, in your group to make the initial repo. Get the whole team together around one computer and decide together how to structure your file tree. You will also want to run create-react-app and install any NPM packages your project will need. an example of a file structure can be seen below.
 
 <img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/files.jpg">
@@ -27,6 +27,7 @@ git commit -m "first commit"
 git remote add origin `http://your_git_repo.com`
 git push -u origin master</pre>
 
+<a name="Where-do-I-start?"></a>
 #### How to add contributors
 If you want others to be able to make changes to your code you will need to add them to the repo as a collaborators. To do this click on the settings on the github repo web page.
 
@@ -36,14 +37,17 @@ Once there click on collaborators and you can search for the other team members 
 
 <img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/colab.jpg">
 
-#### Im a collaborator, now what?
+<a name="Im-a-collaborator-now-what?"></a>
+### Im a collaborator, now what?
 You won't need to fork the repo before you clone it, if you fork it you make a copy and you wont be working on the same project as the rest of your team. Just clone the repo and make a branch. More on branching below.
 
+<a name="What-is-a-Branch,-and-why-do-care?"></a>
 ### What is a Branch, and why do care?
 A branch is when you make a copy of a project but with the intend to make changes but not alter the original version. This will allowing you to make changes to the code with out the risk of breaking the original version.
 
 It also makes it easier for multiple people to work on the same code base and not overwrite or cause conflicts with each other. Then when you are ready to merge your code with the original, git can help make sure everyone's code does not conflict.
 
+<a name="Creating-Your-Own-Branch"></a>
 ### Creating Your Own Branch
 To make your own branch run the following command
 
@@ -51,6 +55,7 @@ To make your own branch run the following command
 
 the -b in the command will make sure you create a branch and switch to it after its creation.
 
+<a name="Checking-What- Branch-You-are-on."></a>
 ### Checking What Branch You are on.
 When starting this guide you will need to be working on your own branch. To check what branch you are on run `git branch`. This will display all the branches you have on your local computer, with a star next to the branch you are working from, or working branch.
 
@@ -58,7 +63,8 @@ When starting this guide you will need to be working on your own branch. To chec
   master
   Bob_Ross_Branch</pre>
 
-#### Getting on Your Branch
+<a name="Getting-on-Your-Branch"></a>
+### Getting on Your Branch
 To switch to another branch run the following command
 
 `git checkout [name_of_your_branch]`
@@ -69,6 +75,7 @@ To switch to another branch run the following command
 
 <img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/Step-0.jpg" />
 
+<a name="How-Do-I-merge-my-code-with-the-master-Master?"></a>
 ## How Do I merge my code with the master Master?
 
 ### Step 1: Checkout master
