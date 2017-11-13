@@ -21,7 +21,7 @@ Before you start you will need one person, and only one person, in your group to
 
 Make sure to create your .gitignore file with node_modules and your .env before you do any add or commits.
 
-When you have the folders in place and the structure you want run git the commands below
+When you have the folders in place and the structure you want run the git commands below
 
 <pre>git add .
 git commit -m "first commit"
@@ -30,7 +30,7 @@ git push -u origin master</pre>
 
 <a name="How-to-add-contributors"></a>
 ## How to add Collaborators
-If you want others to be able to make changes to your code you will need to add them to the repo as a collaborators. To do this click on the settings on the github repo web page.
+If you want others to be able to make changes to your code you will need to add them to the repo as collaborators. To do this click on the settings on the github repo web page.
 
 <img src="https://github.com/Rasbandit/Git-Good-Guide/blob/master/Images/settings.jpg">
 
@@ -44,7 +44,7 @@ You won't need to fork the repo before you clone it, if you fork it you make a c
 
 <a name="What-is-a-Branch"></a>
 ## What is a Branch, and why do care?
-A branch is when you make a copy of a project but with the intend to make changes but not alter the original version. This will allowing you to make changes to the code with out the risk of breaking the original version.
+A branch is when you make a copy of a project but with the intent to make changes but not alter the original version. This will allow you to make changes to the code with out the risk of breaking the original version.
 
 It also makes it easier for multiple people to work on the same code base and not overwrite or cause conflicts with each other. Then when you are ready to merge your code with the original, git can help make sure everyone's code does not conflict.
 
