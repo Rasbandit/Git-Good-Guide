@@ -43,7 +43,7 @@ Once there click on collaborators and you can search for the other team members 
 You won't need to fork the repo before you clone it, if you fork it you make a copy and you wont be working on the same project as the rest of your team. Just clone the repo and make a branch. More on branching below.
 
 <a name="What-is-a-Branch"></a>
-## What is a Branch, and why do care?
+## What is a Branch, and why do I care?
 A branch is when you make a copy of a project but with the intent to make changes but not alter the original version. This will allow you to make changes to the code with out the risk of breaking the original version.
 
 It also makes it easier for multiple people to work on the same code base and not overwrite or cause conflicts with each other. Then when you are ready to merge your code with the original, git can help make sure everyone's code does not conflict.
