@@ -1,6 +1,4 @@
-# Git Good Guide
-
-## A Guide To Getting Good at Git
+# The Git Good Guide: A Guide To Getting Good at Git
 
 ## Setup and Basic Overview
 This repo is designed to help teach the workflow of using git in your group project. when using git there are four versions of the code each person should be concerned with. Your personal version or "branch" of code exists in two separate versions; one on your local machine and the other on GitHub. The master branch has the same setup, where there is a version on your local machine and a version on Github. When writing code it is best practice to branch your code and work exclusively on that branch. We will go over how to merge your code into the master branch
